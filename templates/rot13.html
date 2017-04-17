@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>Assignment:</h1>
+    <form action="/rot13" method="post">
+        <textarea name="text" id="rot13" cols="100" rows="10">{{text}}</textarea>
+        <button type="submit">Encrypt/Decrypt</button>
+    </form>
+
+{% endblock %}
